@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Women Safety Survey</h1>
+  <p id="description">Thank you for sparing your valuable time to help us completing the survey.</p>
+  <form id="survey-form" style="background-color: rgba(32, 42, 68, 0.4)">
+    <label id="name-label">Name
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </label>
+
+    <label id="email-label" >Email
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </label>
+
+    <label id="number-label">Age
+        <input type="number" id="number" min="16" max="70" placeholder="Age" required>
+    </label>
+
+    <p id="gender">Gender</p>
+    <div id="container">
+      <div class="gender">
+        <input type="radio" name="gender" value="male">
+        <label>Male</label>
+      </div>
+      <div class="gender">
+        <input type="radio" name="gender" value="female">
+        <label>Female</label>
+      </div>
+    </div>
+
+
+    <p id="q1">What do you think about current status of women safety in our society?</p>
+    <select id="dropdown">
+          <option disabled="" selected="" value="">Select an option</option>
+       <option>High Safety</option>
+       <option>Moderate Safety</option>
+       <option>Better than Before</option>
+       <option>Totally Unsafe</option>
+    </select>
+
+    <p id="q2">Which field you think woman face safety issues?</p>
+    <div id="check-box">
+      <div class="item">
+          <input type="checkbox" value="educational_institutions">
+          <label>Educational Institutions</label>
+      </div>
+
+      <div class="item">
+        <input type="checkbox" value="work_places">
+        <label>Work Places</label>
+      </div>
+      
+      <div class="item">
+        <input type="checkbox" value="public_places">
+        <label>Public Places</label>
+      </div>
+
+      <div class="item">
+        <input type="checkbox" value="households">
+        <label>Households</label>
+      </div>
+
+      <div class="item">
+        <input type="checkbox" value="public_places">
+        <label>Relegious Institutions</label>
+      </div>
+    </div>
+
+      <p id="suggestions">Suggestions</p>
+      <textarea rows="5" class="suggestions" placeholder="Enter your comments here...."></textarea>
+      <div id="btn">
+        <input type="submit" id="submit">
+      </div>
+
+  </form>
+</body>
+
+</html>
